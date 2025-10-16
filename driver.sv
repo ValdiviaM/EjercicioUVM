@@ -1,3 +1,5 @@
+`include "det_if.sv"
+`include "sequence_item.sv"
 class driver extends uvm_driver #(seq_item);
     `uvm_component_utils(driver)
     function new();

@@ -1,4 +1,4 @@
-`include "uvm_sequence"
+`include "sequence_item.sv"
 class sequence extends uvm_sequence;
     `uvm_object_utils(sequence);
     function new();

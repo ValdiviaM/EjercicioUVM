@@ -1,3 +1,6 @@
+`include "diseño_ejemplo.sv"
+`include "det_if.sv"
+`include "test.sv"
 module tb;
   reg clk;
   

@@ -1,4 +1,5 @@
-
+`include "det_if.sv"
+`include "sequence_item.sv"
 class monitor extends uvm_monitor;
   `uvm_component_utils(monitor)
   function new(string name="monitor", uvm_component parent=null);
@@ -6,7 +7,7 @@ class monitor extends uvm_monitor;
   endfunction
   
   uvm_analysis_port  #(seq_item) mon_analysis_port;
-  virtual switch_if vif;
+  virtual det_if vif;
   
   virtual function void build_phase(uvm_phase phase);
     super.build_phase(phase);

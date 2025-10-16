@@ -1,3 +1,4 @@
+`include "sequence_item.sv"
 class scoreboard extends uvm_scoreboard;
   `uvm_component_utils(scoreboard)
   function new(string name="scoreboard", uvm_component parent=null);
@@ -11,7 +12,7 @@ class scoreboard extends uvm_scoreboard;
     m_analysis_imp = new("m_analysis_imp", this);
   endfunction
   
-  virtual function write(switch_item item);      
+  virtual function write(seq_item item);      
     if (item.data==4'b1011 && item.out!=1)
         `uvm_error("SCBD", $sformatf("ERROR! Mismatch data=0x%0h out=%0b",  item.data, item.out))
     else
