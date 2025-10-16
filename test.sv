@@ -1,4 +1,3 @@
-`include "det_if.sv"
 `include "env.sv"
 class test extends uvm_test;
   `uvm_component_utils(test)
