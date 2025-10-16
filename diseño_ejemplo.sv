@@ -39,7 +39,7 @@ module det_1011 ( input clk,
 
       S101 : begin
         if (in) next_state = S1011;
-		else 	next_state = S10
+		else 	next_state = S10;
       end
 
       S1011: begin
