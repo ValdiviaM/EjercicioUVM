@@ -18,7 +18,7 @@ class scoreboard extends uvm_scoreboard;
     if (item.data==4'b1011 && item.out!=1)
         `uvm_error("SCBD", $sformatf("ERROR! Mismatch data=0x%0h out=%0b",  item.data, item.out))
     else
-        `uvm_info("SCBD", $sformatf("PASS! Match data=0x%0h out=%0b",  item.data, item.out))
+        `uvm_info("SCBD", $sformatf("PASS! Match data=0x%0h out=%0b", item.data, item.out), UVM_LOW)
       
   endfunction
 endclass
