@@ -1,7 +1,7 @@
 `include "driver.sv"
 `include "monitor.sv"
-`include "sequence_item.sv"
 `include "det_if.sv"
+`include "sequence_item.sv"
 
 class agent extends uvm_agent;
   `uvm_component_utils(agent)
