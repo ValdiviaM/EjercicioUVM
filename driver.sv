@@ -1,5 +1,3 @@
-`include "det_if.sv"
-`include "sequence_item.sv"
 class driver extends uvm_driver #(seq_item);
     `uvm_component_utils(driver)
     function new();
@@ -9,7 +7,7 @@ class driver extends uvm_driver #(seq_item);
 
     virtual function void build_phase(uvm_phase phase);
         super.build_phase(phase);
-        if (!config_db#(virtual det_if)::get(this, "","det_if",vif)) begin
+        if (!uvm_config_db#(virtual det_if)::get(this, "","det_if",vif)) begin
             `uvm_fatal("DRV","Could not get vif")  
         end
         
