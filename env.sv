@@ -1,5 +1,5 @@
-`include "scoreboard.sv"
 `include "agent.sv"
+`include "scoreboard.sv"
 
 class env extends uvm_env;
   `uvm_component_utils(env)

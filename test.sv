@@ -16,6 +16,8 @@ class test extends uvm_test;
       uvm_config_db#(virtual det_if)::set(this, "e0.a0.*", "det_vif", vif);
   endfunction
   
+`include "env.sv"
+  
   virtual task run_phase(uvm_phase phase);
     gen_item_seq seq = gen_item_seq::type_id::create("seq");
     phase.raise_objection(this);
