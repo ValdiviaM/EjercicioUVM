@@ -3,7 +3,14 @@ import uvm_pkg::*;
 
 `include "diseño_ejemplo.sv"
 `include "det_if.sv"
+`include "sequence_item.sv"
+`include "driver.sv"
+`include "monitor.sv"
+`include "agent.sv"
+`include "scoreboard.sv"
+`include "env.sv"
 `include "test.sv"
+
 
 module tb;
   reg clk;

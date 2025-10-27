@@ -1,6 +1,3 @@
-`include "scoreboard.sv"
-`include "agent.sv"
-
 class env extends uvm_env;
   `uvm_component_utils(env)
   function new(string name="env", uvm_component parent=null);

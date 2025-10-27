@@ -1,4 +1,3 @@
-`include "env.sv"
 
 class test extends uvm_test;
   `uvm_component_utils(test)
@@ -19,7 +18,7 @@ class test extends uvm_test;
   endfunction  
   
   virtual task run_phase(uvm_phase phase);
-    gen_item_seq seq = gen_item_seq::type_id::create("seq");
+    seq_item seq = seq_item::type_id::create("seq");
     phase.raise_objection(this);
     apply_reset();
     
