@@ -1,5 +1,16 @@
+`include "uvm_macros.svh"
+import uvm_pkg::*;
+
 `include "diseño_ejemplo.sv"
+`include "det_if.sv"
+`include "sequence_item.sv"
+`include "driver.sv"
+`include "monitor.sv"
+`include "scoreboard.sv"
+`include "agent.sv"
+`include "env.sv"
 `include "test.sv"
+
 module tb;
   reg clk;
   
