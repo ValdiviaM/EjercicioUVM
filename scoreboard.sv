@@ -1,6 +1,4 @@
-`include "sequence_item.sv"
-`include "uvm_macros.svh"
-import uvm_pkg::*;
+
 class scoreboard extends uvm_scoreboard;
   `uvm_component_utils(scoreboard)
   function new(string name="scoreboard", uvm_component parent=null);

@@ -3,7 +3,6 @@ import uvm_pkg::*;
 
 `include "diseño_ejemplo.sv"
 `include "det_if.sv"
-`include "env.sv"
 `include "test.sv"
 
 module tb;
